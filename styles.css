@@ -27,12 +27,11 @@ body h1 {
 }
 
 .information_container {
-    width: 100%;
+
     display: flex;
     flex-direction: column;
     align-items: start;
-    
-    width: 27%;
+
     margin: 2rem 2rem;
     background: radial-gradient(
         circle at 50% 80%,  
@@ -49,6 +48,7 @@ body h1 {
 .header_cards {
     width: 100%;
     margin: 0rem;
+    
 }
 
 .header_cards img {
@@ -58,6 +58,16 @@ body h1 {
     border-top-right-radius: 30px;
     background-color: rgb(56, 63, 69);
     border: none;  
+}
+
+.header_cards dt{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.header_cards dd{
+    font-size: 1.17em;
+    font-weight: 500;
 }
 
 .flex_direction_row {
@@ -72,14 +82,16 @@ body h1 {
 
 .card_body {
     box-sizing: border-box;
+    margin: 0rem;
     width: 100%;
     padding:0 2rem;
     display: flex;
     flex-direction: row;
     justify-content: start;
+    list-style: none;
 }
 
-.card_body h3 {
+.card_body li {
     border: 0.1px solid rgba(199, 216, 255, 0.279);
     border-radius: 15px;
     padding: 0.75rem 0.75rem;
@@ -98,7 +110,7 @@ body h1 {
     margin-bottom: 1.5rem;
 }
 
-.card_stadisctics h3{
+.card_stadisctics dt, dd {
     margin:0 0;
     margin-top: 1rem;
     margin-bottom: 0.5rem;
@@ -106,8 +118,8 @@ body h1 {
     font-weight: 500;
 }
 
-.card_stadisctics input{
-    box-sizing: border-box;
+.card_stadisctics input {
+    box-sizing: border-box; /* Hace que no se cuente el padding ni el borde, pero el margin si*/
     width: 87%;
     background: none;
     border: 1px solid rgba(199, 216, 255, 0.471);
